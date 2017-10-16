@@ -3,8 +3,8 @@ require 'pry'
 class Preference < ActiveRecord::Base
 
   def song_sort_order(order)
+    binding.pry
     if order == "ASC"
-      binding.pry
       songs = Song.all
     end
   end
