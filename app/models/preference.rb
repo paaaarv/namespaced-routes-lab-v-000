@@ -4,7 +4,6 @@ class Preference < ActiveRecord::Base
 
   def song_sort_order
     binding.pry
-      songs = Song.all
-    end
+    songs = Song.all
   end
 end
